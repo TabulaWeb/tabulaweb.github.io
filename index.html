@@ -1,20 +1,70 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-  <title>Your awesome title | Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</title>
-  <meta name="generator" content="Jekyll v3.9.0" />
-  <meta property="og:title" content="Your awesome title" />
-  <meta property="og:locale" content="en_US" />
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-  <meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-  <link rel="canonical" href="http://localhost:4000/" />
-  <meta property="og:url" content="http://localhost:4000/" />
-  <meta property="og:site_name" content="Your awesome title" />
-  <!-- End Jekyll SEO tag -->
-  <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" /></head>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" />
+  <title>TabulaWeb</title>
+</head>
   <body>
-    <h1>Home page</h1>
-</body>
+    <header>
+      <div class="content">
+        <div class="header__logo">
+          <a href="">
+            <img src="/assets/img/logo.jpg" alt="">
+          </a>
+        </div>
+        <ul class="header__menu">
+          <li>
+            <a href="">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">SKILLS</a>
+            <a href="">MY WORK</a>
+            <a href="">CONTACT</a>
+          </li>
+        </ul>
+
+        <ul class="header__contact">
+
+        </ul>
+      </div>
+    </header>
+    <section class="about">
+
+    </section>
+  </body>
 </html>
+
+<style>
+body{
+  background-color: #242629;
+}
+
+header{
+  background-color: #16161a;
+  width: 60px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 3;
+  min-height: 500px;
+}
+
+.header__logo img{
+  width: 75px;
+  margin: 0px;
+}
+
+.header__menu{
+  margin-left: 0px;
+}
+
+.header__menu li{
+  display: flex;
+  flex-direction: column;
+}
+</style>
