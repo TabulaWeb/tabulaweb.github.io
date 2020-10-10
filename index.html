@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" />
   <title>TabulaWeb</title>
 </head>
@@ -32,6 +33,60 @@
         </ul>
       
     </header>
+
+    <section>
+      <div id="page" class="en">
+          <div class="container home-page" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+            <div class="text-zone">
+              <h1 aria-label="Привет, Меня зовут Алексей Табула, Я web developer." class="blast-root">
+                <span class="blast" aria-hidden="true" style="opacity: 1;">П</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">р</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">и</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">в</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">е</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">т</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">,</span>
+                <br>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">М</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">е</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">н</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1; margin-right: 13px;">я</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">з</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">о</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">в</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">у</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1; margin-right: 13px;">т</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">А</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">л</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">е</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">к</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">с</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">е</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">й</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">,</span>
+                <br>
+                <span class="blast" aria-hidden="true" style="opacity: 1; margin-right: 13px;">Я</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">w</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">e</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1; margin-right: 13px;">b</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">d</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">e</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">v</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">e</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">l</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">o</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">p</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">e</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">r</span>
+                <span class="blast" aria-hidden="true" style="opacity: 1;">.</span>
+              </h1>
+              <h2>Front End Developer</h2>
+              <br>
+              <a href="/contact/" class="flat-button">Напиши мне!</a>
+            </div>
+          </div>
+      </div>
+    </section>
     <section class="about">
 
     </section>
@@ -180,5 +235,117 @@ header{
 
 .header__menu li a:first-child + a + a + a + a:after {
     content: 'CONTACT';
+}
+
+#page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.container {
+    width: 100%;
+    will-change: contents;
+    height: 90%;
+    min-height: 566px;
+    position: absolute;
+    opacity: 0;
+    top: 5%;
+    margin: 0 auto;
+    z-index: 1;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 55%;
+    max-height: 90%;
+}
+
+.text-zone h1{
+  color: #fff;
+    font-size: 56px;
+    line-height: 53px;
+    margin: 0;
+    font-family: Roboto;
+    font-weight: bold;
+    letter-spacing: -7px;
+}
+
+.text-zone h1:before{
+  content: '<h1>';
+  font-family: cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  margin-top: -40px;
+  left: -15px;
+  letter-spacing: 0px;
+}
+
+.home-page h1:after {
+    content: '<h1/>';
+    font-family: cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: 18px;
+    margin-left: 20px;
+    -webkit-animation: myanim2 1s 1.7s backwards;
+    animation: myanim2 1s 1.7s backwards;
+    letter-spacing: 0px;
+}
+
+.blast {
+    opacity: 0;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.home-page h2 {
+    color: #8d8d8d;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    -webkit-animation: myanim2 1s 1.8s backwards;
+    animation: myanim2 1s 1.8s backwards;
+}
+
+.home-page .flat-button:hover {
+    background: #7f5af0;
+    color: #333333;
+    text-decoration: none;
+}
+
+.home-page .text-zone a {
+    font-weight: normal;
+    color: #7f5af0;
+}
+
+.flat-button {
+    white-space: nowrap;
+}
+
+.flat-button {
+    color: #7f5af0;
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #7f5af0;
+    margin-top: 25px;
+    float: left;
+    -webkit-animation: myanim2 1s 1.8s backwards;
+    animation: myanim2 1s 1.8s backwards;
 }
 </style>
