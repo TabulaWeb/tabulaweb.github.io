@@ -80,10 +80,14 @@
                 <span class="blast" aria-hidden="true" style="opacity: 1;">r</span>
                 <span class="blast" aria-hidden="true" style="opacity: 1;">.</span>
               </h1>
-              <h2>Front End Developer</h2>
+              <!-- <h2>Front End Developer</h2> -->
+              <h3 class="line-1 anim-typewriter"><span class="open_tag"></span>Front End Developer<span class="close_tag"></span></h3>
               <br>
               <a href="/contact/" class="flat-button">Напиши мне!</a>
             </div>
+          </div>
+          <div class="bg">
+            
           </div>
       </div>
     </section>
@@ -348,4 +352,55 @@ header{
     -webkit-animation: myanim2 1s 1.8s backwards;
     animation: myanim2 1s 1.8s backwards;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+.line-1{
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin-bottom: 0px;
+  margin-top: 35px;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 130%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  max-width: fit-content;
+  letter-spacing: 2.5px;
+  font-weight: 300;  
+  color: #8d8d8d;
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+.open_tag:before{
+  content: '<p>';
+  font-family: cursive;
+  font-size: 18px;
+  padding-right: 5px;
+  color: #515152;
+  
+}
+
+.close_tag:after {
+    content: '<p/>';
+    font-size: 18px;
+    font-family: cursive;
+    padding-left: 5px;
+    color: #515152;
+}
+
 </style>
