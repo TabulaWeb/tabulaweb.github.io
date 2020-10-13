@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" />
   <title>TabulaWeb</title>
 </head>
@@ -32,9 +33,13 @@
         </ul>
       
     </header>
-    <section class="about">
-
-    </section>
+    <div id="page" class="en">
+      <div class="container contact" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+        <div class="text-zone">
+          <h1>Мои контакты</h1>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 
@@ -180,5 +185,50 @@ header{
 
 .header__menu li a:first-child + a + a + a + a:after {
     content: 'CONTACT';
+}
+
+.container {
+    width: 100%;
+    will-change: contents;
+    height: 90%;
+    min-height: 566px;
+    position: absolute;
+    opacity: 0;
+    top: 5%;
+    margin: 0 auto;
+    z-index: 1;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+#page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.container.contact .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 35%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
+}
+
+.container.contact .text-zone h1 {
+    font-size: 56px;
+    font-family: 'Roboto';
+    color: #7f5af0;
+    font-weight: bold;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 40px;
+    left: -10px;
 }
 </style>
