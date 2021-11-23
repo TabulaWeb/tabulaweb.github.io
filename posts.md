@@ -1,4 +1,4 @@
 ---
 layout: page
-permalink: /skill/
+permalink: /posts/
 ---
