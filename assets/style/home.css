@@ -1,0 +1,34 @@
+.header-title {
+    color: #fff;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 30px;
+}
+
+.project-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-name p {
+    font-size: 34px;
+    color: #A8B4CF;
+    opacity: 0.8;
+    font-family: 'Roboto';
+    transition: .4s;
+    cursor: default;
+    padding-bottom: 45px;
+}
+
+.project-name p.active {
+    opacity: 1;
+    color: #FFF;
+    transition: .4s;
+}
+
+.project-image {
+    position: relative;
+}
