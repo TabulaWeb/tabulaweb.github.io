@@ -1,9 +1,28 @@
 export default {
     projects: [
-        {id: 1, urlCode: '', urlDesign: '', urlProject: '', urlImage: './assets/img/logo.jpg'},
-        {id: 2, urlCode: '', urlDesign: '', urlProject: '', urlImage: './assets/img/logo.jpg'},
-        {id: 3, urlCode: '', urlDesign: '', urlProject: '', urlImage: './assets/img/logo.jpg'},
-        {id: 4, urlCode: '', urlDesign: '', urlProject: '', urlImage: './assets/img/back.png'},
-        {id: 5, urlCode: '', urlDesign: '', urlProject: '', urlImage: './assets/img/logo.jpg'}
+        {
+            id: 1, 
+            title: 'Концепт промо-сайта с веломаршрутами пскова', 
+            urlCode: '', 
+            urlDesign: '', 
+            urlProject: '', 
+            urlImage: './assets/img/image.png'
+        },
+        {
+            id: 2, 
+            title: 'Концепт промо-сайта с веломаршрутами пскова', 
+            urlCode: '', 
+            urlDesign: '', 
+            urlProject: '', 
+            urlImage: './assets/img/image.png'
+        },
+        {
+            id: 3, 
+            title: 'Концепт промо-сайта с веломаршрутами пскова', 
+            urlCode: '', 
+            urlDesign: '', 
+            urlProject: '', 
+            urlImage: './assets/img/image.png'
+        }
     ]
 }

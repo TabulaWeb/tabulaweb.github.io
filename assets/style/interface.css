@@ -1,3 +1,18 @@
+@font-face {
+    font-family: inter;
+    src: url('../fonts/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: epilepsy-bold;
+    src: url('../fonts/EpilepsySans-Bold.ttf');
+}
+
+@font-face {
+    font-family: epilepsy-regular;
+    src: url('../fonts/EpilepsySans.ttf');
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,30 +20,13 @@
 }
 
 body{
-    background: #0e1217;
+    background-color: #242424;
+    background-image: url('../img/noise.png');
 }
 
 .container{
     width: 100%;
+    /* max-width: 1200px; */
     margin: 0 auto;
     padding: 0 4%;
-}
-
-.header-title a {
-    text-decoration: none;
-    color: #fff;
-}
-
-h1 {
-    font-family: 'Roboto';
-}
-
-header {
-    padding: 15px 0;
-    margin-bottom: 50px;
-    border-bottom: 1px solid rgba(168,179,207,0.2);
-}
-
-main {
-    display: flex;
 }
