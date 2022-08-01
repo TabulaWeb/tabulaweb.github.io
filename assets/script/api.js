@@ -1,4 +1,4 @@
-export default {
+export const project = {
     projects: [
         {
             id: 1, 
@@ -6,7 +6,8 @@ export default {
             urlCode: '', 
             urlDesign: '', 
             urlProject: '', 
-            urlImage: './assets/img/image.png'
+            urlImage: './assets/img/image.png',
+            tag: 'Website'
         },
         {
             id: 2, 
@@ -14,7 +15,8 @@ export default {
             urlCode: '', 
             urlDesign: '', 
             urlProject: '', 
-            urlImage: './assets/img/image.png'
+            urlImage: './assets/img/image.png',
+            tag: 'Website'
         },
         {
             id: 3, 
@@ -22,7 +24,17 @@ export default {
             urlCode: '', 
             urlDesign: '', 
             urlProject: '', 
-            urlImage: './assets/img/image.png'
+            urlImage: './assets/img/image.png',
+            tag: 'Website'
+        },
+        {
+            id: 4, 
+            title: 'Концепт промо-сайта с веломаршрутами пскова', 
+            urlCode: '', 
+            urlDesign: '', 
+            urlProject: '', 
+            urlImage: './assets/img/image.png',
+            tag: 'Website'
         }
     ]
-}
+};

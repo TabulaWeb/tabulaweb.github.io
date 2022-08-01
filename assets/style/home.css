@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 70px 60px;
+    margin-bottom: 60px;
 }
 .project-item {
     width: 100%;
@@ -120,6 +121,7 @@
     line-height: 19px;
     color: #F4F4F4;
     opacity: 0.5;
+    transition: 0.2s;
 }
 
 .filter button:nth-child(1) {
@@ -145,6 +147,11 @@
 
 .filter button:nth-child(3) {
     padding-left: 40px;
+}
+
+.filter button.active {
+    opacity: 1;
+    transition: 0.2s;
 }
 
 @media screen and (max-width: 1300px) {
