@@ -1,0 +1,11 @@
+aside {
+  display: grid;
+  gap: calc(var(--padding)*6);
+  max-width: 255px;
+  width: 100%;
+}
+
+.aside-user {
+  display: grid;
+  gap: calc(var(--padding)*2.5);
+}

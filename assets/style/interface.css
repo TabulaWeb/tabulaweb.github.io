@@ -1,32 +1,67 @@
 @font-face {
-    font-family: inter;
-    src: url('../fonts/Inter-Regular.ttf');
+    font-family: AnonymousPro-Regular;
+    src: url('../fonts/AnonymousPro-Regular.ttf');
 }
 
 @font-face {
-    font-family: epilepsy-bold;
-    src: url('../fonts/EpilepsySans-Bold.ttf');
+    font-family: Satoshi-Medium;
+    src: url('../fonts/Satoshi-Medium.ttf');
 }
 
-@font-face {
-    font-family: epilepsy-regular;
-    src: url('../fonts/EpilepsySans.ttf');
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
 body{
-    background-color: #242424;
-    background-image: url('../img/noise.png');
+  background-color: var(--background);
+}
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+p {
+  color: var(--text);
+  font-size: 15px;
+}
+a {
+  color: var(--primary);
+  font-size: 15px;
+}
+button {
+  font-size: 15px;
+}
+main {
+  width: 100%;
+  max-width: 1048px;
+  margin: 0 auto;
+  padding: 0 calc(var(--padding)*2);
 }
 
-.container{
-    width: 100%;
-    /* max-width: 1200px; */
-    margin: 0 auto;
-    padding: 0 4%;
+.background {
+  pointer-events: none;
+  width: 100dvw;
+  height: 100dvh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url('../img/noise.png'), url('../img/line.svg');
 }
