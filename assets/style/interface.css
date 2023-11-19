@@ -1,11 +1,16 @@
 @font-face {
-    font-family: AnonymousPro-Regular;
-    src: url('../fonts/AnonymousPro-Regular.ttf');
+  font-family: AnonymousPro-Regular;
+  src: url('../fonts/AnonymousPro-Regular.ttf');
 }
 
 @font-face {
-    font-family: Satoshi-Medium;
-    src: url('../fonts/Satoshi-Medium.ttf');
+  font-family: Inter-Bold;
+  src: url('../fonts/Inter-Bold.ttf');
+}
+
+@font-face {
+  font-family: Inter-SemiBold;
+  src: url('../fonts/Inter-SemiBold.ttf');
 }
 
 *,
@@ -18,7 +23,7 @@
 } 
 body{
   display: grid;
-  gap: calc(var(--padding)*3);
+  gap: calc(var(--padding)*7);
   background-color: var(--background);
 }
 h1,
@@ -51,6 +56,9 @@ button {
   font-size: 15px;
 }
 main {
+  display: grid;
+  grid-template-columns: 275px auto;
+  gap: clamp(25px, 4vw, 145px);
   width: 100%;
   max-width: 1048px;
   margin: 0 auto;

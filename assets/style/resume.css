@@ -1,0 +1,69 @@
+.resume {
+  display: grid;
+  gap: calc(var(--padding)*14);
+  margin-top: calc(var(--padding)*5);
+  grid-template-rows: repeat(2, max-content);
+}
+
+.resume-about {
+  display: grid;
+  grid-template-rows: repeat(3, max-content);
+  gap: calc(var(--padding)*7);
+}
+
+.resume-about__title {
+  display: grid;
+  gap: calc(var(--padding)*2);
+}
+
+.resume-about__title h1 {
+  font-family: 'Inter-Bold', sans-serif;
+  color: var(--text);
+}
+
+.resume-about__title h2 {
+  font-family: 'Inter-SemiBold', sans-serif;
+  color: var(--text);
+}
+
+.resume-about__description {
+  display: grid;
+  gap: calc(var(--padding)*2);
+}
+
+.resume-about__description p {
+  font-family: 'AnonymousPro-Regular', monospace;
+}
+
+.resume-about__skills {
+  display: grid;
+  gap: calc(var(--padding)*3);
+}
+
+.resume-about__skills p {
+  font-family: 'AnonymousPro-Regular', monospace;
+  color: var(--text-opacity);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--padding);
+}
+
+.resume-about__skills p span {
+  display: block;
+  width: 2px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: var(--text-opacity);
+}
+
+.resume-expertise {
+  display: grid;
+  gap: calc(var(--padding)*7);
+}
+
+.resume-expertise h2 {
+  font-size: 20px;
+  color: var(--text);
+  font-family: 'Inter-SemiBold', monospace;
+}
