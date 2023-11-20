@@ -67,3 +67,51 @@
   color: var(--text);
   font-family: 'Inter-SemiBold', monospace;
 }
+
+.resume-expertise__company {
+  display: grid;
+  gap: calc(var(--padding)*3);
+}
+
+.resume-expertise__company-header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 20px auto;
+  gap: calc(var(--padding)*3);
+}
+
+.resume-expertise__company-header div {
+  display: grid;
+  gap: var(--padding);
+  font-family: 'AnonymousPro-Bold', monospace;
+}
+
+.resume-expertise__company-body {
+  display: grid;
+  gap: var(--padding);
+}
+
+.resume-expertise__company-body p {
+  display: grid;
+  grid-template-columns: 7px auto;
+  gap: calc(var(--padding)*2);
+  font-family: 'AnonymousPro-Regular', monospace;
+  color: var(--text);
+}
+
+.resume-expertise__company-footer p {
+  color: var(--text-opacity);
+  font-family: 'AnonymousPro-Regular', monospace;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--padding);
+}
+
+.resume-expertise__company-footer span {
+  width: 2px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: var(--text-opacity);
+}
+

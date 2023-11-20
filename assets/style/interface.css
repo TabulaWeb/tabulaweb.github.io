@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: AnonymousPro-Bold;
+  src: url('../fonts/AnonymousPro-Bold.ttf');
+}
+
+@font-face {
   font-family: Inter-Bold;
   src: url('../fonts/Inter-Bold.ttf');
 }
