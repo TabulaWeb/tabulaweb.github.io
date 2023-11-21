@@ -44,3 +44,25 @@ header {
     width: 20px;
     height: 20px;
 }
+
+@media screen and (max-width: 700px) {
+  header {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding-top: calc(var(--padding)*3);
+    gap: calc(var(--padding)*3);
+  }
+
+  header > img {
+    margin: 0 auto;
+  }
+
+  .header-nav {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .header-download {
+    display: none;
+  }
+}

@@ -3,11 +3,13 @@ aside {
   gap: calc(var(--padding)*14);
   max-width: 275px;
   width: 100%;
+  grid-template-rows: repeat(3, max-content);
 }
 
 .aside-user {
   display: grid;
   gap: calc(var(--padding)*7);
+  grid-template-rows: repeat(3, max-content);
 }
 
 .aside-user__avatar {
@@ -64,8 +66,74 @@ aside {
   gap: calc(var(--padding)*7);
 }
 
+.aside-project {
+  display: grid;
+  gap: calc(var(--padding)*7);
+}
+
 .aside-project h2 {
   font-size: 20px;
   color: var(--text);
   font-family: 'Inter-SemiBold', monospace;
+}
+
+.aside-achievements__items {
+  display: grid;
+  gap: calc(var(--padding)*4);
+}
+
+.aside-achievements__items-item {
+  display: grid;
+  gap: calc(var(--padding)*2);
+  padding: calc(var(--padding)*3);
+  background-color: var(--card);
+  font-family: 'AnonymousPro-Regular', monospace;
+}
+
+.aside-project__items-item {
+  padding: calc(var(--padding)*7) calc(var(--padding)*3) calc(var(--padding)*3) calc(var(--padding)*3);
+  background-image: url('../img/pet.svg');
+  background-repeat: no-repeat;
+}
+
+.aside-project__items-item .logo {
+  width: 100px;
+  height: 30px;
+  margin-bottom: calc(var(--padding)*3);
+}
+
+.aside-project__items-item .interface {
+  width: 100%;
+  margin-bottom: calc(var(--padding)*3);
+}
+
+.aside-project__items-item .text {
+  font-family: 'AnonymousPro-Regular', monospace; 
+  margin-bottom: var(--padding);
+}
+
+.aside-project__items-item .status {
+  color: var(--text-opacity);
+  font-family: 'AnonymousPro-Regular', monospace; 
+}
+
+@media screen and (max-width: 700px) {
+  aside {
+    max-width: none;
+  }
+
+  .aside-user__avatar {
+    max-width: none;
+    max-height: none;
+    background-size: contain;
+  }
+
+  .aside-user__avatar img {
+    width: 100%;
+  }
+
+  .aside-project__items-item {
+    background: none;
+    padding: 0;
+  }
 }
